@@ -1,7 +1,17 @@
 ---
 import ReunionLayout from '../layouts/ReunionLayout.astro';
+import '../styles/global.css'
 ---
 
 <ReunionLayout title="Home">
-  <h1>Réunion Racing</h1>
+    <section 
+      class="relative w-full h-screen bg-cover bg-center flex flex-col items-center justify-center text-center"
+      style="background-image: url('/home-2x-scaled.jpg');"
+    >
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+
+      <div class="relative z-10 px-6 flex flex-col items-center justify-center">
+        <img src="/rr_logo_full_r2.svg" alt="Centered Logo" class="object-contain">
+      </div>
+    </section>
 </ReunionLayout>
