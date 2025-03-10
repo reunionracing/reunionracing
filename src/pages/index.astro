@@ -1,6 +1,5 @@
 ---
 import ReunionLayout from '../layouts/ReunionLayout.astro';
-import '../styles/global.css'
 ---
 
 <ReunionLayout title="Home">
@@ -14,4 +13,41 @@ import '../styles/global.css'
         <img src="/rr_logo_full_r2.svg" alt="Centered Logo" class="object-contain">
       </div>
     </section>
-</ReunionLayout
+
+    <section 
+      class="relative w-full min-h-screen bg-cover bg-center flex flex-col items-center justify-center text-center px-16 py-32"
+      style="background-image: url('/wheels-scaled.jpg');"
+    >
+      <div class="absolute inset-0 bg-black opacity-60"></div>
+      <div class="relative z-10 max-w-4xl text-white">
+        <h2 class="text-yellow-500 text-5xl font-bold mb-8">About Us</h2>
+        <p class="mt-10 text-3xl font-light leading-relaxed">Réunion Racing is an amateur competitive cycling team based in Dallas, Texas. Created to fill a void in the region of a team-driven, competition-focused, community-committed team honoring the historic culture of the sport, Réunion Racing is a 501(c)(4) nonprofit organization registered with <span class="text-yellow-600 font-semibold"><a href="https://usacycling.org">USA Cycling</a></span>. We are dedicated to championing and growing the sport of competitive cycling across all racing disciplines and helping dismantle the many perceived barriers for new competitors.</p>
+        <div class="mt-10">
+          <img src="/rr_crest_r2.svg" alt="Team Logo" class="mx-auto h-30">
+        </div>
+        <p class="mt-10 text-3xl font-light leading-relaxed">Réunion Racing believes that competing provides a unique and rich sense of fulfillment and pride, regardless of outcome. Our team is governed by a code of ethics and conduct and is overseen by our board of directors. While we stop short of strictly adhering to each of <span class="text-yellow-600 font-semibold"><a href="https://www.velominati.com">Velominati’s Rules</a></span>, we respect their intent and the heritage and etiquette from which they stem. We believe in riding safe, treating others as you wish to be treated, exceptional sportsmanship, and leading by example.</p>
+      </div>
+    </section>
+
+    <section class="w-full min-h-screen flex flex-col items-center justify-center text-center px-12 py-20 bg-white">
+      <h2 class="text-yellow-500 text-5xl font-bold mb-8">Ethos</h2>
+      <div class="max-w-3xl mx-auto text-gray-800 text-xl leading-relaxed">
+        <img src="/bicyclette.png" alt="Sketch of a Bike" class="mx-auto h-70 mb-8">
+        <p>Like the original <span class="text-yellow-500"><a href="https://en.wikipedia.org/wiki/La_R%C3%A9union_(Dallas)">European settlement in Dallas</a></span> from which Réunion Racing takes its name, the team is united in the belief that commitment to community is both essential and rewarding. Réunion Racing does not and shall not discriminate on the basis of race, color, religion (creed), gender expression, age, national origin (ancestry), disability, marital status, sexual orientation, or military status in any of its activities or operations. We are committed to providing a welcoming environment for all team members and their families, always operating from a place of respect for our fellow cyclists and competitors, sponsors and partners, race promoters, volunteers and the general public.</p>
+      </div>
+    </section>
+
+    <section class="w-full min-h-screen flex flex-col items-center justify-center text-center px-12 py-20 bg-white relative">
+      <div class="absolute inset-0 w-full h-full bg-cover bg-center opacity-250" style="background-image: url('/team-w-bicycles.jpg');"></div>
+      <img src="/oui_hero.svg" alt="Sketch of a Bike" class="mx-auto h-60 mb-8 relative z-20">
+    </section>
+
+    <section class="w-full min-h-screen flex flex-col items-center justify-center text-center px-12 py-20 bg-white">
+      <h2 class="text-yellow-500 text-5xl font-bold mb-8">Team Partners</h2>
+      <div class="max-w-3xl mx-auto text-gray-800 text-xl leading-relaxed">
+      <p>Réunion Racing builds mutually beneficial partnerships with like-minded cycling industry companies, local businesses and charitable organizations. We are honored to promote these partnerships on our team kits, website, and social media platforms. Additionally, we support at least one nonprofit organization annually through social media, education, volunteer efforts, membership drive assistance, and fundraising as applicable.</p>
+      <p>Please lend your support to the following businesses:</p>
+      </div>
+    </section>
+</ReunionLayout>
+
