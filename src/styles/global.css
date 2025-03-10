@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "CharlevoixPro";
+  src:
+    url("/fonts/WOFF2/CharlevoixPro-Regular.woff2") format("woff2"),
+    url("/fonts/WOFF/CharlevoixPro-Regular.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font-charlevoix {
+  font-family: "CharlevoixPro", sans-serif;
+}
