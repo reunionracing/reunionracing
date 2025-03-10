@@ -5,10 +5,26 @@
   src:
     url("/fonts/WOFF2/CharlevoixPro-Regular.woff2") format("woff2"),
     url("/fonts/WOFF/CharlevoixPro-Regular.woff") format("woff");
-  font-weight: 700;
+  font-weight: 400; /* Regular */
   font-style: normal;
 }
 
+@font-face {
+  font-family: "CharlevoixPro";
+  src:
+    url("/fonts/WOFF2/CharlevoixPro-Bold.woff2") format("woff2"),
+    url("/fonts/WOFF/CharlevoixPro-Bold.woff") format("woff");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+/* Default font class */
 .font-charlevoix {
   font-family: "CharlevoixPro", sans-serif;
+}
+
+/* Specific styles for bold text */
+.font-charlevoix-bold {
+  font-family: "CharlevoixPro", sans-serif;
+  font-weight: 700;
 }
