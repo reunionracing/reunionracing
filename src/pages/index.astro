@@ -9,8 +9,8 @@ import ReunionLayout from '../layouts/ReunionLayout.astro';
     >
       <div class="absolute inset-0 bg-black opacity-50"></div>
 
-      <nav class="absolute top-0 left-0 w-full flex justify-center py-6 text-[#d89700] text-lg font-bold tracking-wide uppercase font-fleisch">
-        <ul class="flex space-x-12">
+      <nav class="absolute top-0 left-0 w-full flex justify-center py-4 md:py-6 text-yellow-500 text-sm md:text-lg font-bold tracking-widest uppercase font-fleisch">
+        <ul class="flex space-x-6 md:space-x-12">
           <li><a href="#about-us" class="hover:text-yellow-600 transition duration-300">About Us</a></li>
           <li><a href="#team-partners" class="hover:text-yellow-600 transition duration-300">Team Partners</a></li>
           <li><a href="#calendar" class="hover:text-yellow-600 transition duration-300">Calendar</a></li>
@@ -18,15 +18,15 @@ import ReunionLayout from '../layouts/ReunionLayout.astro';
         </ul>
       </nav>
       
-      <div class="absolute left-6 top-6">
+      <div class="hidden md:block absolute left-6 top-6">
         <img src="/location_estd_tag_r2.svg" alt="established" class="object-contain">
       </div>
 
-      <div class="absolute left-8 top-0.70">
+      <div class="hidden md:block absolute left-8 top-0.70">
         <img src="/commitment_label.svg" alt="commitment" class="object-contain">
       </div>
 
-      <div class="absolute right-8 top-0.70">
+      <div class="hidden md:block absolute right-8 top-0.70">
         <img src="/contribution_label.svg" alt="contribution" class="object-contain">
       </div>
 
@@ -34,7 +34,7 @@ import ReunionLayout from '../layouts/ReunionLayout.astro';
         <img src="/rr_logo_full_r2.svg" alt="Reunion Racing Logo" class="object-contain">
       </div>
 
-      <div class="absolute bottom-32 w-full text-center">
+      <div class="hidden md:block absolute bottom-32 w-full text-center">
         <p class="text-[#d89700] uppercase tracking-widest text-lg md:text-xl lg:text-xl">Commitment to Team</p>
       </div>
       
@@ -53,7 +53,6 @@ import ReunionLayout from '../layouts/ReunionLayout.astro';
           <i class="fab fa-instagram text-[#d89700] text-3xl hover:text-yellow-600 transition duration-300"></i>
         </a>
       </div>
-
 
       <div class="absolute bottom-0 w-full bg-[#d89700] border-t-8 border-blue-400 py-4 tracking-wide">
         <div class="flex justify-center items-center mt-4 space-x-4">
