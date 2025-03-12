@@ -9,24 +9,55 @@ import ReunionLayout from '../layouts/ReunionLayout.astro';
     >
       <div class="absolute inset-0 bg-black opacity-50"></div>
 
-      <nav class="absolute top-0 left-0 w-full flex justify-center py-6 text-yellow-500 text-lg font-bold tracking-wide uppercase font-fleisch">
+      <nav class="absolute top-0 left-0 w-full flex justify-center py-6 text-[#d89700] text-lg font-bold tracking-wide uppercase font-fleisch">
         <ul class="flex space-x-12">
           <li><a href="#about-us" class="hover:text-yellow-600 transition duration-300">About Us</a></li>
           <li><a href="#team-partners" class="hover:text-yellow-600 transition duration-300">Team Partners</a></li>
+          <li><a href="#calendar" class="hover:text-yellow-600 transition duration-300">Calendar</a></li>
           <li><a href="#join-us" class="hover:text-yellow-600 transition duration-300">Join Us</a></li>
         </ul>
       </nav>
-
-      <div class="relative z-10 px-6 flex flex-col items-center justify-center">
-        <img src="/rr_logo_full_r2.svg" alt="Centered Logo" class="object-contain">
+      
+      <div class="absolute left-6 top-6">
+        <img src="/location_estd_tag_r2.svg" alt="established" class="object-contain">
       </div>
 
-      <div class="absolute bottom-0 w-full bg-yellow-600 border-t-4 border-blue-400 py-8 text-center text-black font-bold text-lg tracking-wide">
-        <p class="text-yellow-900 uppercase">Commitment to Team</p>
+      <div class="absolute left-8 top-0.70">
+        <img src="/commitment_label.svg" alt="commitment" class="object-contain">
+      </div>
+
+      <div class="absolute right-8 top-0.70">
+        <img src="/contribution_label.svg" alt="contribution" class="object-contain">
+      </div>
+
+      <div class="relative z-10 px-6 flex flex-col items-center justify-center mt-[-100px]">
+        <img src="/rr_logo_full_r2.svg" alt="Reunion Racing Logo" class="object-contain">
+      </div>
+
+      <div class="absolute bottom-32 w-full text-center">
+        <p class="text-[#d89700] uppercase tracking-widest text-lg md:text-xl lg:text-xl">Commitment to Team</p>
+      </div>
+      
+      <div class="absolute bottom-30 left-8 flex-col space-y-3">
+        <a href="https://www.strava.com/clubs/823327" target="_blank" rel="nofollow noreferrer">
+          <i class="fab fa-strava text-[#d89700] text-3xl hover:text-yellow-600 transition duration-300"></i>
+        </a>
+        <br/>
+        <br/>
+        <a href="https://www.facebook.com/Réunion-Racing-107501841298006" target="_blank" rel="nofollow noreferrer">
+          <i class="fab fa-facebook-f text-[#d89700] text-3xl hover:text-yellow-600 transition duration-300"></i>
+        </a>
+        <br/>
+        <br/>
+        <a href="https://www.instagram.com/reunionracing/" target="_blank" rel="nofollow noreferrer">
+          <i class="fab fa-instagram text-[#d89700] text-3xl hover:text-yellow-600 transition duration-300"></i>
+        </a>
+      </div>
+
+
+      <div class="absolute bottom-0 w-full bg-[#d89700] border-t-8 border-blue-400 py-4 tracking-wide">
         <div class="flex justify-center items-center mt-4 space-x-4">
-          <span class="text-sm">ESTD</span>
-          <span class="text-2xl font-extrabold">21</span>
-          <span class="text-sm">2021</span>
+          <img src="/estd_horizontal.svg" alt="est" class="object-contain">
         </div>
       </div>
 
@@ -39,7 +70,7 @@ import ReunionLayout from '../layouts/ReunionLayout.astro';
     >
       <div class="absolute inset-0 bg-black opacity-60"></div>
       <div class="relative z-10 max-w-4xl text-white">
-        <h2 class="text-yellow-500 text-5xl font-bold mb-8">About Us</h2>
+        <h2 class="text-[#d89700] text-5xl font-bold mb-8">About Us</h2>
         <p class="mt-10 text-3xl font-light leading-relaxed">Réunion Racing is an amateur competitive cycling team based in Dallas, Texas. Created to fill a void in the region of a team-driven, competition-focused, community-committed team honoring the historic culture of the sport, Réunion Racing is a 501(c)(4) nonprofit organization registered with <span class="text-yellow-600 font-semibold"><a href="https://usacycling.org">USA Cycling</a></span>. We are dedicated to championing and growing the sport of competitive cycling across all racing disciplines and helping dismantle the many perceived barriers for new competitors.</p>
         <div class="mt-10">
           <img src="/rr_crest_r2.svg" alt="Team Logo" class="mx-auto h-30">
@@ -49,10 +80,10 @@ import ReunionLayout from '../layouts/ReunionLayout.astro';
     </section>
 
     <section class="w-full min-h-screen flex flex-col items-center justify-center text-center px-12 py-20 bg-white font-charlevoix">
-      <h2 class="text-yellow-500 text-5xl font-bold mb-8">Ethos</h2>
+      <h2 class="text-[#d89700] text-5xl font-bold mb-8">Ethos</h2>
       <div class="max-w-3xl mx-auto text-gray-800 text-xl leading-relaxed">
         <img src="/bicyclette.png" alt="Sketch of a Bike" class="mx-auto h-60 mb-8">
-        <p>Like the original <span class="text-yellow-500"><a href="https://en.wikipedia.org/wiki/La_R%C3%A9union_(Dallas)">European settlement in Dallas</a></span> from which Réunion Racing takes its name, the team is united in the belief that commitment to community is both essential and rewarding. Réunion Racing does not and shall not discriminate on the basis of race, color, religion (creed), gender expression, age, national origin (ancestry), disability, marital status, sexual orientation, or military status in any of its activities or operations. We are committed to providing a welcoming environment for all team members and their families, always operating from a place of respect for our fellow cyclists and competitors, sponsors and partners, race promoters, volunteers and the general public.</p>
+        <p>Like the original <span class="text-[#d89700]"><a href="https://en.wikipedia.org/wiki/La_R%C3%A9union_(Dallas)">European settlement in Dallas</a></span> from which Réunion Racing takes its name, the team is united in the belief that commitment to community is both essential and rewarding. Réunion Racing does not and shall not discriminate on the basis of race, color, religion (creed), gender expression, age, national origin (ancestry), disability, marital status, sexual orientation, or military status in any of its activities or operations. We are committed to providing a welcoming environment for all team members and their families, always operating from a place of respect for our fellow cyclists and competitors, sponsors and partners, race promoters, volunteers and the general public.</p>
       </div>
     </section>
 
@@ -65,7 +96,7 @@ import ReunionLayout from '../layouts/ReunionLayout.astro';
       id="team-partners"
       class="w-full flex flex-col items-center justify-center text-center px-12 py-20 bg-stone-100 relative font-charlevoix"
     >
-      <h2 class="text-yellow-500 text-5xl font-bold mb-8">Team Partners</h2>
+      <h2 class="text-[#d89700] text-5xl font-bold mb-8">Team Partners</h2>
       <div class="max-w-3xl mx-auto text-gray-800 text-xl leading-relaxed">
       <p>Réunion Racing builds mutually beneficial partnerships with like-minded cycling industry companies, local businesses and charitable organizations. We are honored to promote these partnerships on our team kits, website, and social media platforms. Additionally, we support at least one nonprofit organization annually through social media, education, volunteer efforts, membership drive assistance, and fundraising as applicable.</p>
       <p>Please lend your support to the following businesses:</p>
