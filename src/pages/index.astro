@@ -8,7 +8,7 @@ import NetlifyForm from '../components/NetlifyForm.astro';
       class="relative w-full h-screen bg-cover bg-center flex flex-col items-center justify-center text-center font-charlevoix-bold"
       style="background-image: url('/home-2x-scaled.jpg');"
     >
-      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
 
       <nav class="absolute top-0 left-0 w-full flex justify-center py-4 md:py-6 text-[#d89700] text-sm md:text-lg font-bold tracking-widest uppercase font-fleisch">
         <ul class="flex space-x-6 md:space-x-12">
@@ -18,46 +18,57 @@ import NetlifyForm from '../components/NetlifyForm.astro';
           <li><a href="#join-us" class="hover:text-yellow-600 transition duration-300">Join Us</a></li>
         </ul>
       </nav>
-      
+
       <div class="hidden md:block absolute left-6 top-6">
         <img src="/location_estd_tag_r2.svg" alt="established" class="object-contain">
       </div>
 
-      <div class="hidden md:block absolute left-8 top-0.70">
+      <div class="hidden lg:block absolute left-10 top-90">
         <img src="/commitment_label.svg" alt="commitment" class="object-contain">
       </div>
 
-      <div class="hidden md:block absolute right-8 top-0.70">
+      <div class="hidden lg:block absolute right-10 top-90">
         <img src="/contribution_label.svg" alt="contribution" class="object-contain">
       </div>
 
-      <div class="relative z-10 px-6 flex flex-col items-center justify-center mt-[-100px]">
-        <img src="/rr_logo_full_r2.svg" alt="Reunion Racing Logo" class="object-contain">
+      <div class="relative z-10 px-6 flex flex-col items-center justify-center mt-0">
+        <img src="/rr_logo_full_r2.svg" alt="Reunion Racing Logo" class="w-80 lg:w-full object-contain">
       </div>
 
-      <div class="hidden md:block absolute bottom-32 w-full text-center">
-        <p class="text-[#d89700] uppercase tracking-widest text-lg md:text-xl lg:text-xl">Commitment to Team</p>
-      </div>
-      
-      <div class="absolute bottom-30 left-8 flex-col space-y-3">
-        <a href="https://www.strava.com/clubs/823327" target="_blank" rel="nofollow noreferrer">
-          <i class="fab fa-strava text-[#d89700] text-3xl hover:text-yellow-600 transition duration-300"></i>
-        </a>
-        <br/>
-        <br/>
-        <a href="https://www.facebook.com/Réunion-Racing-107501841298006" target="_blank" rel="nofollow noreferrer">
-          <i class="fab fa-facebook-f text-[#d89700] text-3xl hover:text-yellow-600 transition duration-300"></i>
-        </a>
-        <br/>
-        <br/>
-        <a href="https://www.instagram.com/reunionracing/" target="_blank" rel="nofollow noreferrer">
-          <i class="fab fa-instagram text-[#d89700] text-3xl hover:text-yellow-600 transition duration-300"></i>
-        </a>
+      <div class="block md:hidden absolute bottom-24 text-center z-20 w-80 lg:w-full">
+        <p class="text-[#d89700] uppercase tracking-widest text-lg md:text-xl lg:text-xl">
+          <a href="https://www.strava.com/clubs/823327" target="_blank" rel="nofollow noreferrer">
+            <i class="fab fa-strava text-[#d89700] text-3xl hover:text-yellow-600 transition duration-300 mx-4"></i>
+          </a>
+          <a href="https://www.facebook.com/Réunion-Racing-107501841298006" target="_blank" rel="nofollow noreferrer">
+            <i class="fab fa-facebook-f text-[#d89700] text-3xl hover:text-yellow-600 transition duration-300 mx-4"></i>
+          </a>
+          <a href="https://www.instagram.com/reunionracing/" target="_blank" rel="nofollow noreferrer">
+            <i class="fab fa-instagram text-[#d89700] text-3xl hover:text-yellow-600 transition duration-300 mx-4"></i>
+          </a>
+        </p>
       </div>
 
-      <div class="absolute bottom-0 w-full bg-[#d89700] border-t-8 border-blue-400 py-4 tracking-wide">
-        <div class="flex justify-center items-center mt-4 space-x-4">
-          <img src="/estd_horizontal.svg" alt="est" class="object-contain">
+      <div class="hidden lg:block absolute bottom-24 w-full text-center">
+        <p class="text-[#d89700] uppercase tracking-widest text-lg md:text-xl lg:text-xl mx-4">
+          Commitment to Team
+          <br/>
+          <br/>
+          <a href="https://www.strava.com/clubs/823327" target="_blank" rel="nofollow noreferrer">
+            <i class="fab fa-strava text-[#d89700] text-3xl hover:text-yellow-600 transition duration-300 mx-4"></i>
+          </a>
+          <a href="https://www.facebook.com/Réunion-Racing-107501841298006" target="_blank" rel="nofollow noreferrer">
+            <i class="fab fa-facebook-f text-[#d89700] text-3xl hover:text-yellow-600 transition duration-300 mx-4"></i>
+          </a>
+          <a href="https://www.instagram.com/reunionracing/" target="_blank" rel="nofollow noreferrer">
+            <i class="fab fa-instagram text-[#d89700] text-3xl hover:text-yellow-600 transition duration-300 mx-4"></i>
+          </a>
+        </p>
+      </div>
+
+      <div class="absolute bottom-0 w-full bg-[#d89700] border-t-8 border-blue-400 py-2 tracking-wide">
+        <div class="flex justify-center items-center mt-3 space-x-3">
+          <img src="/estd_horizontal.svg" alt="est" class="w-20 lg:w-40 object-contain">
         </div>
       </div>
 
@@ -82,7 +93,7 @@ import NetlifyForm from '../components/NetlifyForm.astro';
     <section class="w-full min-h-screen flex flex-col items-center justify-center text-center px-12 py-20 bg-white font-charlevoix">
       <h2 class="text-[#d89700] text-5xl font-bold mb-8">Ethos</h2>
       <div class="max-w-3xl mx-auto text-gray-800 text-xl leading-relaxed">
-        <img src="/bicyclette.png" alt="Sketch of a Bike" class="mx-auto h-60 mb-8">
+        <img src="/bicyclette.png" alt="Sketch of a Bike" class="mx-auto max-h-60 w-auto max-w-full mb-8">
         <p>Like the original <span class="text-[#d89700]"><a href="https://en.wikipedia.org/wiki/La_R%C3%A9union_(Dallas)" class="hover:text-yellow-600 transition duration-300">European settlement in Dallas</a></span> from which Réunion Racing takes its name, the team is united in the belief that commitment to community is both essential and rewarding. Réunion Racing does not and shall not discriminate on the basis of race, color, religion (creed), gender expression, age, national origin (ancestry), disability, marital status, sexual orientation, or military status in any of its activities or operations. We are committed to providing a welcoming environment for all team members and their families, always operating from a place of respect for our fellow cyclists and competitors, sponsors and partners, race promoters, volunteers and the general public.</p>
       </div>
     </section>
@@ -104,7 +115,8 @@ import NetlifyForm from '../components/NetlifyForm.astro';
 
       <div class="mt-10 md:mt-16"></div>
 
-      <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10 items-center justify-center max-w-5xl mx-auto">
+      <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 
+        gap-25 items-center justify-center max-w-5xl mx-auto">
         <div class="flex justify-center">
           <a href="https://www.ekoi.com/en-us/" target="_blank" rel="noopener noreferrer">
             <img src="/02-EKOI-NOIR.png" alt="Ekoi" class="w-48 hover:opacity-80 transition">
@@ -116,13 +128,13 @@ import NetlifyForm from '../components/NetlifyForm.astro';
           </a>
         </div>
         <div class="flex justify-center">
-          <a href="https://picklepower.com" target="_blank" rel="noopener noreferrer">
-            <img src="/pickle-juice.png" alt="Pickle Juice" class="w-48 hover:opacity-80 transition">
+          <a href="https://sapphiregovstrategies.com" target="_blank" rel="noopener noreferrer">
+            <img src="/shapphire-logo-black.png" alt="Shapphire Strategies" class="w-48 hover:opacity-80 transition">
           </a>
         </div>
         <div class="flex justify-center">
-          <a href="https://sapphiregovstrategies.com" target="_blank" rel="noopener noreferrer">
-            <img src="/shapphire-logo-black.png" alt="Shapphire Strategies" class="w-48 hover:opacity-80 transition">
+          <a href="https://picklepower.com" target="_blank" rel="noopener noreferrer">
+            <img src="/pickle-juice.png" alt="Pickle Juice" class="w-48 hover:opacity-80 transition">
           </a>
         </div>
         <div class="flex justify-center">
@@ -131,18 +143,23 @@ import NetlifyForm from '../components/NetlifyForm.astro';
           </a>
         </div>
         <div class="flex justify-center">
+          <a href="https://usacycling.com" target="_blank" rel="noopener noreferrer">
+            <img src="/usacycling-logo.svg" alt="USA Cycling" class="w-16 md:w-26 hover:opacity-80 transition">
+          </a>
+        </div>
+        <div class="flex justify-center">
           <a href="https://www.celestialbeerworks.com" target="_blank" rel="noopener noreferrer">
             <img src="/celestial.png" alt="Celestial" class="w-48 hover:opacity-80 transition">
           </a>
         </div>
         <div class="flex justify-center">
-          <a href="https://go.topgunoptions.com" target="_blank" rel="noopener noreferrer">
-            <img src="/top-gun-logo.png" alt="Top Gun Options" class="w-48 hover:opacity-80 transition">
+          <a href="https://www.williamsracingacademy.com" target="_blank" rel="noopener noreferrer">
+            <img src="/wra-logo.png" alt="WRA" class="w-48 hover:opacity-80 transition">
           </a>
         </div>
         <div class="flex justify-center">
-          <a href="https://www.williamsracingacademy.com" target="_blank" rel="noopener noreferrer">
-            <img src="/wra-logo.png" alt="WRA" class="w-48 hover:opacity-80 transition">
+          <a href="https://go.topgunoptions.com" target="_blank" rel="noopener noreferrer">
+            <img src="/top-gun-logo.png" alt="Top Gun Options" class="w-48 hover:opacity-80 transition">
           </a>
         </div>
       </div>
@@ -151,24 +168,25 @@ import NetlifyForm from '../components/NetlifyForm.astro';
 
     <section
       id="calendar"
-      class="relative w-full min-h-screen bg-cover bg-center flex flex-col items-center justify-center text-center px-16 py-32 font-charlevoix"
+      class="relative w-full min-h-screen bg-cover bg-center flex flex-col items-center justify-center text-center px-4 md:px-16 py-32 font-charlevoix"
     >
       <h2 class="text-[#d89700] text-5xl font-bold mb-8">Calendar</h2>
 
-        <h3 class="text-2xl md:text-3xl font-bold text-yellow-600">📅 Stay Up to Date with Réunion Racing!</h3>
-          <p class="mt-4 text-gray-700 max-w-2xl mx-auto">
-            Our calendar is your go-to resource for upcoming races, training sessions, team events, and community rides. 
-            Whether you're preparing for your next big race or looking to connect with fellow cyclists, this is where you'll 
-            find all the key dates. Check back regularly so you never miss an opportunity to ride, compete, and grow with the team! 🚴‍♂️🔥
-          </p>
+      <h3 class="text-2xl md:text-3xl font-bold text-[#d89700]">📅 Stay Up to Date with Réunion Racing!</h3>
+      <p class="mt-4 text-gray-700 max-w-2xl mx-auto">
+        Our calendar is your go-to resource for upcoming races, training sessions, team events, and community rides. 
+        Whether you're preparing for your next big race or looking to connect with fellow cyclists, this is where you'll 
+        find all the key dates. Check back regularly so you never miss an opportunity to ride, compete, and grow with the team! 🚴‍♂️🔥
+      </p>
       <div class="mt-10 md:mt-16"></div>
-      <iframe src="https://calendar.google.com/calendar/embed?wkst=1&ctz=America%2FChicago&title=R%C3%A9union%20Racing%20Calendar&src=aW5mb0ByZXVuaW9ucmFjaW5nLm9yZw&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%230B8043"
-              style="border: 0;"
-              width="100%"
-              height="600"
-              frameborder="0"
-              scrolling="no">
-      </iframe>
+      <div class="w-full max-w-7xl bg-gray-100 border-2 border-[#d89700] rounded-xl shadow-xl overflow-hidden">
+        <iframe src="https://calendar.google.com/calendar/embed?wkst=1&ctz=America%2FChicago&title=R%C3%A9union%20Racing%20Calendar&src=aW5mb0ByZXVuaW9ucmFjaW5nLm9yZw&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%230B8043"
+                class="w-full"
+                height="600"
+                frameborder="0"
+                scrolling="no">
+        </iframe>
+      </div>
     </section>
 
     <section 
@@ -184,7 +202,8 @@ import NetlifyForm from '../components/NetlifyForm.astro';
       id="instagram-feed"
       class="relative w-full min-h-screen bg-cover bg-center flex flex-col items-center text-center px-4 md:px-8 py-32 font-charlevoix"
     >
-
+      <h2 class="text-[#d89700] text-5xl font-bold mb-8">@reunionracing</h2>
+      <div class="mt-11 md:mt-16"></div>
       <div class="w-full flex justify-center">
         <div class="instagram-wrapper w-full max-w-lg">
           <blockquote 
@@ -274,7 +293,7 @@ import NetlifyForm from '../components/NetlifyForm.astro';
           <script async src="//www.instagram.com/embed.js"></script>
         </div>
       </div>
-  
+      <div class="mt-10 md:mt-16"></div>
       <div class="absolute bottom-0 w-full bg-[#d89700] py-16 tracking-wide">
 
         <div class="hidden md:block absolute left-18 top-6">
